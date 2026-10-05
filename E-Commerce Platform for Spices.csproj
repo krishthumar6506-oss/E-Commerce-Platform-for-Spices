@@ -73,19 +73,24 @@
     </Content>
     <Content Include="Contact.aspx" />
     <Content Include="CSS\Contact.css" />
+    <Content Include="CSS\Gallery.css" />
     <Content Include="CSS\Home.css" />
     <Content Include="CSS\Login.css" />
     <Content Include="CSS\Register.css" />
     <Content Include="CSS\Style.css" />
+    <Content Include="Gallery.aspx" />
     <Content Include="Home.aspx" />
     <Content Include="Images\About Us.png" />
     <Content Include="Images\Contect.png" />
+    <Content Include="Images\Factory.jpg" />
+    <Content Include="Images\factory1.jpg" />
     <Content Include="Images\Logo.png" />
     <Content Include="Images\Coriader.png" />
     <Content Include="Images\Dhana-Dal.png" />
     <Content Include="Images\Dhana-Kuria.png" />
     <Content Include="Images\Fennel-Seeds.png" />
     <Content Include="Images\homepage.png" />
+    <Content Include="Images\Machinery.jpg" />
     <Content Include="Images\Methi-Kuria.png" />
     <Content Include="Images\Rai-Kuria.png" />
     <Content Include="Login.aspx" />
@@ -99,6 +104,13 @@
     </Compile>
     <Compile Include="Contact.aspx.designer.cs">
       <DependentUpon>Contact.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Gallery.aspx.cs">
+      <DependentUpon>Gallery.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Gallery.aspx.designer.cs">
+      <DependentUpon>Gallery.aspx</DependentUpon>
     </Compile>
     <Compile Include="Home.aspx.cs">
       <DependentUpon>Home.aspx</DependentUpon>
