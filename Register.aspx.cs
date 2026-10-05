@@ -32,13 +32,8 @@ namespace E_Commerce_Platform_for_Spices
                 connection.Open();
                 command.ExecuteNonQuery();
                 connection.Close();
-                Response.Write("<script>alert('Registration Successful!');</script>");
+                Response.Write("<script>alert('Registration Successful!');  window.location='Login.aspx';</script>");
 
-                txtName.Text = "";
-                txtMobile.Text = "";
-                txtEmail.Text = "";
-                txtPassword.Text = "";
-                txtConfirmPassword.Text = "";
 
                 //string connectionString = "Data Source=(localdb)\\ProjectModels;Initial Catalog=UserManagement;Trusted_Connection=True;";
                 //SqlConnection connection = new SqlConnection(connectionString);

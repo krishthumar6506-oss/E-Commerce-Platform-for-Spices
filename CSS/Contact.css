@@ -1,20 +1,36 @@
 ﻿/* =========================================================
-   CONTACT PAGE
+   CONTACT HERO IMAGE
    ========================================================= */
 
-* {
-    box-sizing: border-box;
+.contact-hero {
+    width: 100%;
+    height: 330px;
+    overflow: hidden;
+    background: #f8f6f5;
 }
+
+.contact-image {
+    width: 100%;
+    height: 100%;
+}
+
+    .contact-image .about-img {
+        width: 100%;
+        height: 100%;
+        display: block;
+        object-fit: cover;
+        object-position: center;
+    }
 
 
 /* =========================================================
-   MAIN CONTACT SECTION
+   CONTACT SECTION
    ========================================================= */
 
 .contact-section {
     width: 100%;
     background: #f8f6f5;
-    padding: 40px 20px;
+    padding: 28px 20px 35px;
 }
 
 .contact-container {
@@ -29,24 +45,30 @@
 
 
 /* =========================================================
-   LEFT SIDE
+   CONTACT INFORMATION HEADING
    ========================================================= */
 
 .contact-information h2 {
-    margin: 0 0 8px;
+    margin: 0 0 6px;
     color: #292929;
     font-family: 'Poppins', sans-serif;
-    font-size: 24px;
-    font-weight: 800;
-    line-height: 1.3;
+    /* SMALLER */
+    font-size: 27px;
+    font-weight: 900;
+    line-height: 1.5;
 }
 
+
+/* =========================================================
+   DESCRIPTION
+   ========================================================= */
+
 .contact-description {
-    margin: 0 0 18px;
+    margin: 0 0 15px;
     color: #555;
     font-family: 'Poppins', sans-serif;
-    font-size: 12px;
-    line-height: 1.5;
+    font-size: 13px;
+    line-height: 1.3;
 }
 
 
@@ -56,22 +78,16 @@
 
 .contact-card {
     width: 100%;
-    min-height: 82px;
-    margin-bottom: 16px;
-    padding: 14px 16px;
+    min-height: 75px;
+    margin-bottom: 14px;
+    padding: 12px 14px;
     background: #ffffff;
     border-radius: 8px;
     display: flex;
     align-items: center;
-    gap: 12px;
+    gap: 11px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.09);
-    transition: all 0.25s ease;
 }
-
-    .contact-card:hover {
-        transform: translateY(-2px);
-        box-shadow: 0 6px 16px rgba(0, 0, 0, 0.11);
-    }
 
 
 /* =========================================================
@@ -79,9 +95,9 @@
    ========================================================= */
 
 .contact-icon {
-    width: 36px;
-    height: 36px;
-    min-width: 36px;
+    width: 35px;
+    height: 35px;
+    min-width: 35px;
     background: #e8eee8;
     border-radius: 6px;
     display: flex;
@@ -100,10 +116,10 @@
    ========================================================= */
 
 .contact-card-content h3 {
-    margin: 0 0 4px;
+    margin: 0 0 3px;
     color: #222;
     font-family: 'Poppins', sans-serif;
-    font-size: 11px;
+    font-size: 14px;
     font-weight: 700;
     line-height: 1.3;
 }
@@ -112,62 +128,50 @@
     margin: 0;
     color: #555;
     font-family: 'Poppins', sans-serif;
-    font-size: 10px;
+    font-size: 11px;
     line-height: 1.5;
 }
 
 
 /* =========================================================
-   INQUIRY BOX
+   SEND AN INQUIRY BOX
    ========================================================= */
 
 .inquiry-box {
     position: relative;
     overflow: hidden;
-    padding: 25px 24px;
+    padding: 20px 22px;
     background: #ffffff;
-    border-radius: 10px;
+    border-radius: 9px;
     box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
 }
 
-    .inquiry-box::after {
-        content: "";
-        position: absolute;
-        width: 90px;
-        height: 90px;
-        right: -25px;
-        top: -20px;
-        border-radius: 50%;
-        background: rgba(8, 117, 28, 0.10);
-        filter: blur(12px);
-        pointer-events: none;
-    }
-
 
     /* =========================================================
-   INQUIRY HEADING
+   SEND AN INQUIRY HEADING
    ========================================================= */
 
     .inquiry-box h2 {
         position: relative;
         z-index: 1;
-        margin: 0 0 18px;
+        margin: 0 0 15px;
         color: #292929;
         font-family: 'Poppins', sans-serif;
-        font-size: 24px;
-        font-weight: 800;
+        /* SMALLER */
+        font-size: 30px;
+        font-weight: 700;
         line-height: 1.3;
     }
 
 
 /* =========================================================
-   FORM GROUP
+   FORM
    ========================================================= */
 
 .contact-form-group {
     position: relative;
     z-index: 1;
-    margin-bottom: 13px;
+    margin-bottom: 11px;
 }
 
 
@@ -177,10 +181,10 @@
 
     .contact-form-group label {
         display: block;
-        margin-bottom: 5px;
+        margin-bottom: 4px;
         color: #333;
         font-family: 'Poppins', sans-serif;
-        font-size: 10px;
+        font-size: 13px;
         font-weight: 600;
     }
 
@@ -191,23 +195,16 @@
 
 .contact-input {
     width: 100%;
-    height: 38px;
-    padding: 7px 11px;
+    height: 36px;
+    padding: 6px 10px;
     border: 1px solid #d5ddd5;
     border-radius: 5px;
     background: #f9fbf9;
     color: #333;
     font-family: 'Poppins', sans-serif;
-    font-size: 10px;
+    font-size: 9px;
     outline: none;
-    transition: all 0.2s ease;
 }
-
-    .contact-input:focus {
-        border-color: #08751c;
-        background: #ffffff;
-        box-shadow: 0 0 0 2px rgba(8, 117, 28, 0.08);
-    }
 
 
 /* =========================================================
@@ -216,24 +213,17 @@
 
 .contact-message {
     width: 100%;
-    height: 92px;
-    padding: 9px 11px;
+    height: 82px;
+    padding: 8px 10px;
     border: 1px solid #d5ddd5;
     border-radius: 5px;
     background: #f9fbf9;
     color: #333;
     font-family: 'Poppins', sans-serif;
-    font-size: 10px;
+    font-size: 11px;
     outline: none;
     resize: none;
-    transition: all 0.2s ease;
 }
-
-    .contact-message:focus {
-        border-color: #08751c;
-        background: #ffffff;
-        box-shadow: 0 0 0 2px rgba(8, 117, 28, 0.08);
-    }
 
 
     /* =========================================================
@@ -243,6 +233,7 @@
     .contact-input::placeholder,
     .contact-message::placeholder {
         color: #999;
+        font-size: 10px;
     }
 
 
@@ -252,12 +243,10 @@
 
 .validation-error {
     display: block;
-    margin-top: 3px;
+    margin-top: 2px;
     color: #d32f2f;
     font-family: 'Poppins', sans-serif;
-    font-size: 9px;
-    font-weight: 500;
-    line-height: 1.4;
+    font-size: 11px;
 }
 
 
@@ -266,31 +255,22 @@
    ========================================================= */
 
 .send-message-button {
-    position: relative;
-    z-index: 1;
     width: 100%;
-    height: 39px;
-    margin-top: 4px;
+    height: 37px;
+    margin-top: 3px;
     padding: 0;
     border: none;
-    border-radius: 6px;
+    border-radius: 5px;
     background: #08751c;
     color: #ffffff;
     font-family: 'Poppins', sans-serif;
-    font-size: 10px;
+    font-size: 11px;
     font-weight: 600;
     cursor: pointer;
-    transition: all 0.25s ease;
 }
 
     .send-message-button:hover {
         background: #065f17;
-        transform: translateY(-1px);
-        box-shadow: 0 4px 10px rgba(8, 117, 28, 0.20);
-    }
-
-    .send-message-button:active {
-        transform: translateY(0);
     }
 
 
@@ -300,22 +280,18 @@
 
 @media (max-width: 768px) {
 
-    .contact-section {
-        padding: 30px 18px;
+    .contact-hero {
+        height: 280px;
     }
 
     .contact-container {
         grid-template-columns: 1fr;
         max-width: 600px;
-        gap: 20px;
     }
 
-    .contact-description {
-        max-width: 100%;
-    }
-
-    .inquiry-box {
-        padding: 22px;
+    .contact-information h2,
+    .inquiry-box h2 {
+        font-size: 17px;
     }
 }
 
@@ -326,76 +302,17 @@
 
 @media (max-width: 576px) {
 
+    .contact-hero {
+        height: 230px;
+    }
+
     .contact-section {
-        padding: 25px 12px;
+        padding: 22px 12px 28px;
     }
 
     .contact-information h2,
     .inquiry-box h2 {
-        font-size: 20px;
-    }
-
-    .contact-description {
-        font-size: 10px;
-    }
-
-    .contact-card {
-        min-height: 70px;
-        padding: 12px;
-    }
-
-    .contact-icon {
-        width: 34px;
-        height: 34px;
-        min-width: 34px;
-    }
-
-    .contact-card-content h3 {
-        font-size: 10px;
-    }
-
-    .contact-card-content p {
-        font-size: 9px;
-    }
-
-    .inquiry-box {
-        padding: 20px 16px;
-    }
-
-    .contact-form-group label {
-        font-size: 9px;
-    }
-
-    .contact-input {
-        height: 36px;
-        font-size: 9px;
-    }
-
-    .contact-message {
-        height: 80px;
-        font-size: 9px;
-    }
-
-    .send-message-button {
-        height: 37px;
-        font-size: 9px;
-    }
-
-    .validation-error {
-        font-size: 8px;
-    }
-}
-
-
-/* =========================================================
-   SMALL MOBILE
-   ========================================================= */
-
-@media (max-width: 380px) {
-
-    .contact-information h2,
-    .inquiry-box h2 {
-        font-size: 18px;
+        font-size: 16px;
     }
 
     .contact-description {
@@ -410,18 +327,12 @@
         font-size: 8px;
     }
 
-    .contact-input {
-        height: 34px;
-        font-size: 8px;
-    }
-
+    .contact-input,
     .contact-message {
-        height: 75px;
         font-size: 8px;
     }
 
     .send-message-button {
-        height: 35px;
         font-size: 8px;
     }
 }
