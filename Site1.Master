@@ -64,7 +64,7 @@
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link" id="navNGOs" href="NGOs.aspx">
+                    <a class="nav-link" id="navNGOs" href="Gallery.aspx">
                         <i class="bi bi-images"></i> Gallery
                     </a>
                 </li>
@@ -146,11 +146,11 @@ food safety standards.
             <div class="col-lg-2 col-md-3 col-6">
                 <h5 class="footer-heading">Most selling product</h5>
                 <ul class="footer-links">
-                    <li><a href="Register.aspx"><i class="bi bi-chevron-right"></i> Register</a></li>
-                    <li><a href="Login.aspx"><i class="bi bi-chevron-right"></i> Login</a></li>
-                    <li><a href="Donate.aspx"><i class="bi bi-chevron-right"></i> Donate Now</a></li>
-                    <li><a href="NGOs.aspx"><i class="bi bi-chevron-right"></i> Partner NGO</a></li>
-                    <li><a href="Contact.aspx"><i class="bi bi-chevron-right"></i> Volunteer</a></li>
+                    <li><a href="ViewProduct.aspx"><i class="bi bi-chevron-right"></i> Rai Kuria</a></li>
+                    <li><a href="ViewProduct.aspx"><i class="bi bi-chevron-right"></i> Methi Kuria</a></li>
+                    <li><a href="ViewProduct.aspx"><i class="bi bi-chevron-right"></i> Dhana Kuria</a></li>
+                    <li><a href="ViewProduct.aspx"><i class="bi bi-chevron-right"></i> Dhana Dal</a></li>
+                    <li><a href="ViewProduct.aspx"><i class="bi bi-chevron-right"></i> Fennel Seeds</a></li>
                 </ul>
             </div>
 
