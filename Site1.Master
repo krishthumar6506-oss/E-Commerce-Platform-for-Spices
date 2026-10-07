@@ -93,7 +93,7 @@
                     </a>
                 <% } else { %>
                     <a href="Login.aspx" class="btn-nav-outline" id="navLogin">
-                        <i class="bi bi-box-arrow-in-right"></i> Login
+                        <i class="bi bi-box-arrow-in-right"></i> Logout
                     </a>
                     
                 <% } %>
