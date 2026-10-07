@@ -1,0 +1,308 @@
+/* ===== VIEW ORDER PAGE CSS ===== */
+
+/* ----- Hero ----- */
+.order-hero {
+    background: linear-gradient(135deg, #022c22, #065f46);
+    padding: 50px 20px 40px;
+}
+
+.order-hero-inner {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.order-success-icon i {
+    font-size: 3.5rem;
+    color: #34d399;
+    animation: popBounce 0.7s ease;
+}
+
+@keyframes popBounce {
+    0%   { transform: scale(0); opacity: 0; }
+    60%  { transform: scale(1.2); opacity: 1; }
+    100% { transform: scale(1); }
+}
+
+.order-hero-title {
+    font-size: 2.2rem;
+    font-weight: 800;
+    color: #fff;
+    margin-bottom: 6px;
+}
+
+.order-hero-subtitle {
+    color: rgba(255,255,255,0.7);
+    font-size: 0.92rem;
+    margin: 0;
+}
+
+/* ----- View Order Section ----- */
+.view-order-section {
+    padding: 40px 0 80px;
+    background: #f4f5fb;
+}
+
+/* ----- Order Number Banner ----- */
+.order-number-banner {
+    background: #fff;
+    border-radius: 14px;
+    padding: 16px 24px;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 28px;
+    box-shadow: 0 3px 14px rgba(0,0,0,0.06);
+    flex-wrap: wrap;
+}
+
+.order-number-banner i { color: #059669; font-size: 1.3rem; }
+
+.order-number-banner span {
+    font-size: 0.92rem;
+    color: #374151;
+}
+
+.order-number-banner strong {
+    color: #059669;
+    font-weight: 700;
+}
+
+.order-date-label {
+    margin-left: auto;
+    font-size: 0.82rem;
+    color: #9ca3af;
+}
+
+/* ----- Grid ----- */
+.view-order-grid {
+    display: grid;
+    grid-template-columns: 1fr 380px;
+    gap: 24px;
+    align-items: start;
+}
+
+@media (max-width: 900px) { .view-order-grid { grid-template-columns: 1fr; } }
+
+/* ----- Cards ----- */
+.order-detail-card {
+    background: #fff;
+    border-radius: 18px;
+    padding: 26px;
+    box-shadow: 0 4px 18px rgba(0,0,0,0.07);
+}
+
+.mt-3 { margin-top: 20px; }
+
+.order-card-title {
+    font-size: 1rem;
+    font-weight: 700;
+    color: #1f2937;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.order-card-title i { color: #059669; font-size: 1.1rem; }
+
+/* ----- Ordered Product Row ----- */
+.ordered-product-row {
+    display: flex;
+    align-items: flex-start;
+    gap: 18px;
+}
+
+.ordered-product-img {
+    width: 90px;
+    height: 90px;
+    object-fit: cover;
+    border-radius: 12px;
+    border: 1px solid #e5e7eb;
+    flex-shrink: 0;
+}
+
+.ordered-product-info { display: flex; flex-direction: column; gap: 6px; flex: 1; }
+
+.ordered-product-name {
+    font-size: 1rem;
+    font-weight: 700;
+    color: #1f2937;
+    line-height: 1.4;
+}
+
+.ordered-product-weight {
+    font-size: 0.82rem;
+    color: #9ca3af;
+}
+
+.ordered-price-row { display: flex; align-items: center; gap: 14px; margin-top: 4px; }
+
+.ordered-price {
+    font-size: 1.3rem;
+    font-weight: 800;
+    color: #059669;
+}
+
+.ordered-shipping {
+    font-size: 0.78rem;
+    color: #059669;
+    font-weight: 600;
+}
+
+/* ----- Shipping Details Grid ----- */
+.shipping-detail-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+}
+
+@media (max-width: 560px) { .shipping-detail-grid { grid-template-columns: 1fr; } }
+
+.shipping-detail-item { display: flex; flex-direction: column; gap: 4px; }
+.shipping-detail-item.full-col { grid-column: 1 / -1; }
+
+.sd-label {
+    font-size: 0.67rem;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    color: #9ca3af;
+    text-transform: uppercase;
+}
+
+.sd-value {
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #1f2937;
+    word-break: break-word;
+}
+
+/* ----- Status Tracker ----- */
+.status-tracker { display: flex; flex-direction: column; }
+
+.status-step {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.step-icon {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: #059669;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 1rem;
+    flex-shrink: 0;
+    box-shadow: 0 4px 14px rgba(5,150,105,0.35);
+}
+
+.step-icon.pending {
+    background: #f3f4f6;
+    color: #d1d5db;
+    box-shadow: none;
+}
+
+.step-info { display: flex; flex-direction: column; }
+
+.step-title {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #1f2937;
+}
+
+.step-desc {
+    font-size: 0.78rem;
+    color: #9ca3af;
+}
+
+.status-connector {
+    width: 2px;
+    height: 30px;
+    background: #e5e7eb;
+    margin-left: 21px;
+}
+
+/* ----- Payment Summary ----- */
+.payment-summary-row {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.88rem;
+    color: #6b7280;
+    margin-bottom: 10px;
+    align-items: center;
+}
+
+.pm-value { font-weight: 600; color: #374151; }
+.free-tag { color: #059669; font-weight: 600; font-size: 0.85rem; }
+
+.payment-summary-divider {
+    height: 1px;
+    background: #f3f4f6;
+    margin: 12px 0;
+}
+
+.total-row { margin-top: 4px; }
+
+.total-row > span:first-child {
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: #374151;
+}
+
+.total-amount {
+    font-size: 1.6rem;
+    font-weight: 800;
+    color: #059669;
+}
+
+/* ----- Action Buttons ----- */
+.order-action-btns {
+    display: flex;
+    gap: 12px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+.btn-continue-shop,
+.btn-contact-us {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 13px 18px;
+    border-radius: 12px;
+    font-size: 0.87rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.25s ease;
+    min-width: 140px;
+}
+
+.btn-continue-shop {
+    background: #059669;
+    color: #fff;
+    box-shadow: 0 4px 14px rgba(5,150,105,0.3);
+}
+
+.btn-continue-shop:hover {
+    background: #047857;
+    color: #fff;
+    transform: translateY(-2px);
+}
+
+.btn-contact-us {
+    background: #f3f4f6;
+    color: #374151;
+}
+
+.btn-contact-us:hover {
+    background: #e5e7eb;
+    color: #1f2937;
+}
