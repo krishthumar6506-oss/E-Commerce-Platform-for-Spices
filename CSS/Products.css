@@ -1,0 +1,281 @@
+﻿/* ===== PRODUCTS PAGE CSS ===== */
+
+/* ----- Hero ----- */
+.products-hero {
+    background: linear-gradient(135deg, #022c22 0%, #065f46 60%, #059669 100%);
+    padding: 70px 20px 60px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.products-hero::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+
+.products-hero-content {
+    position: relative;
+    z-index: 1;
+}
+
+.products-badge {
+    display: inline-block;
+    background: rgba(255, 255, 255, 0.15);
+    color: #a7f3d0;
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    padding: 5px 16px;
+    border-radius: 50px;
+    border: 1px solid rgba(255,255,255,0.25);
+    margin-bottom: 16px;
+}
+
+.products-title {
+    font-size: 2.8rem;
+    font-weight: 800;
+    color: #fff;
+    margin-bottom: 14px;
+    text-shadow: 0 2px 20px rgba(0,0,0,0.3);
+}
+
+.products-subtitle {
+    color: rgba(255,255,255,0.75);
+    font-size: 1rem;
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.7;
+}
+
+/* ----- Filter Bar ----- */
+.filter-section {
+    background: #fff;
+    padding: 20px 0;
+    border-bottom: 1px solid #e5e7eb;
+    position: sticky;
+    top: 60px;
+    z-index: 100;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+}
+
+.filter-bar {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.filter-btn {
+    background: none;
+    border: 2px solid #e5e7eb;
+    color: #4b5563;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.87rem;
+    font-weight: 500;
+    padding: 8px 22px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.25s ease;
+}
+
+.filter-btn:hover {
+    border-color: #059669;
+    color: #059669;
+    background: #f0fdf4;
+}
+
+.filter-btn.active {
+    background: #059669;
+    border-color: #059669;
+    color: #fff;
+    box-shadow: 0 4px 14px rgba(5,150,105,0.35);
+}
+
+/* ----- Products Section ----- */
+.products-section {
+    padding: 50px 0 80px;
+    background: #f4f5fb;
+}
+
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 28px;
+}
+
+@media (max-width: 900px) {
+    .products-grid { grid-template-columns: repeat(2, 1fr); }
+    .products-title { font-size: 2rem; }
+}
+
+@media (max-width: 560px) {
+    .products-grid { grid-template-columns: 1fr; }
+}
+
+/* ----- Product Card ----- */
+.product-card {
+    background: #fff;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.07);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    animation: fadeInUp 0.5s ease both;
+}
+
+.product-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 35px rgba(0,0,0,0.13);
+}
+
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+
+.product-card-img-wrap {
+    position: relative;
+    overflow: hidden;
+    height: 230px;
+    background: #f9fafb;
+}
+
+.product-card-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+.product-card:hover .product-card-img {
+    transform: scale(1.07);
+}
+
+.product-badge {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    padding: 4px 12px;
+    border-radius: 50px;
+    z-index: 2;
+    text-transform: uppercase;
+}
+
+.seeds-badge  { background: #dcfce7; color: #15803d; }
+.powder-badge { background: #ffedd5; color: #c2410c; }
+.spices-badge { background: #fef3c7; color: #b45309; }
+.pulses-badge { background: #ede9fe; color: #7c3aed; }
+.masala-badge { background: #fee2e2; color: #b91c1c; }
+
+.product-card-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(5, 150, 105, 0.82);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.product-card:hover .product-card-overlay {
+    opacity: 1;
+}
+
+.overlay-btn {
+    color: #fff;
+    border: 2px solid #fff;
+    border-radius: 50px;
+    padding: 10px 26px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: background 0.2s ease;
+}
+
+.overlay-btn:hover {
+    background: #fff;
+    color: #059669;
+}
+
+.product-card-body {
+    padding: 18px 20px 20px;
+}
+
+.product-card-name {
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: #1f2937;
+    margin-bottom: 6px;
+}
+
+.product-card-desc {
+    font-size: 0.85rem;
+    color: #6b7280;
+    line-height: 1.5;
+    margin-bottom: 16px;
+    min-height: 40px;
+}
+
+.product-card-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.product-price {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #059669;
+}
+
+.product-price small {
+    font-size: 0.78rem;
+    font-weight: 400;
+    color: #9ca3af;
+}
+
+.btn-view-detail {
+    background: #059669;
+    color: #fff;
+    font-size: 0.82rem;
+    font-weight: 600;
+    padding: 8px 18px;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: all 0.25s ease;
+    white-space: nowrap;
+}
+
+.btn-view-detail:hover {
+    background: #047857;
+    color: #fff;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(5,150,105,0.4);
+}
+
+/* ----- No Results ----- */
+.no-results {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 20px;
+    color: #9ca3af;
+    gap: 12px;
+}
+
+.no-results i {
+    font-size: 3rem;
+    color: #d1d5db;
+}
+
+.no-results p {
+    font-size: 1rem;
+}
