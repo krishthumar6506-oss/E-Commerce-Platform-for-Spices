@@ -72,6 +72,19 @@
       <DependentUpon>Project.mdf</DependentUpon>
     </Content>
     <Content Include="Contact.aspx" />
+    
+    <Content Include="About.aspx" />
+    <Content Include="Payment.aspx" />
+    <Content Include="Products.aspx" />
+    <Content Include="ViewOrder.aspx" />
+    <Content Include="ViewProduct.aspx" />
+    <Content Include="CSS\About.css" />
+    <Content Include="CSS\Payment.css" />
+    <Content Include="CSS\Products.css" />
+    <Content Include="CSS\ViewOrder.css" />
+    <Content Include="CSS\ViewProduct.css" />
+    <Content Include="Images\About_Hero_Clean.png" />
+    <Content Include="Images\About_Hero_NoText.png" />
     <Content Include="CSS\Contact.css" />
     <Content Include="CSS\Gallery.css" />
     <Content Include="CSS\Home.css" />
@@ -118,6 +131,41 @@
     </Compile>
     <Compile Include="Home.aspx.designer.cs">
       <DependentUpon>Home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="About.aspx.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="About.aspx.designer.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Payment.aspx.cs">
+      <DependentUpon>Payment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Payment.aspx.designer.cs">
+      <DependentUpon>Payment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Products.aspx.cs">
+      <DependentUpon>Products.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Products.aspx.designer.cs">
+      <DependentUpon>Products.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ViewOrder.aspx.cs">
+      <DependentUpon>ViewOrder.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ViewOrder.aspx.designer.cs">
+      <DependentUpon>ViewOrder.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ViewProduct.aspx.cs">
+      <DependentUpon>ViewProduct.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ViewProduct.aspx.designer.cs">
+      <DependentUpon>ViewProduct.aspx</DependentUpon>
     </Compile>
     <Compile Include="Login.aspx.cs">
       <DependentUpon>Login.aspx</DependentUpon>

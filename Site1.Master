@@ -58,7 +58,7 @@
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link" id="navDonate" href="Donate.aspx">
+                    <a class="nav-link" id="navDonate" href="Products.aspx">
                         <i class="bi bi-shop-window"></i> Products
                     </a>
                 </li>
@@ -78,27 +78,22 @@
             </ul>
 
             <!-- Auth Buttons -->
-            <div class="nav-auth-btns d-flex align-items-center gap-2">
-                <% if (Session["UserId"] != null) { %>
-                    <% if (Session["UserType"]?.ToString() == "Admin") { %>
-                        <a href="Admin/Dashboard.aspx" class="btn-nav-outline" id="navAdmin">
-                            <i class="bi bi-shield-fill"></i> Admin Panel
-                        </a>
-                    <% } %>
-                    <span class="btn-nav-outline" style="cursor:default;">
-                        <i class="bi bi-person-circle"></i> <%: Session["UserName"] %>
-                    </span>
-                    <a href="Logout.aspx" class="btn-nav-filled" id="navLogout">
-                        <i class="bi bi-box-arrow-right"></i> Logout
-                    </a>
-                <% } else { %>
-                    <a href="Login.aspx" class="btn-nav-outline" id="navLogin">
-                        <i class="bi bi-box-arrow-in-right"></i> Logout
-                    </a>
-                    
-                <% } %>
-            </div>
+<div class="nav-auth-btns d-flex align-items-center gap-2">
+    <a href="Logout.aspx"
+       class="btn-nav-outline"
+       id="navLogin"
+       onclick="return confirmLogout();">
+        <i class="bi bi-box-arrow-right"></i> Logout
+    </a>
+</div>
 
+<script type="text/javascript">
+    function confirmLogout() {
+        alert("You have been logged out successfully.");
+        window.location.href = "Login.aspx";
+        return false;
+    }
+</script>
         </div>
     </div>
 </nav>
@@ -136,8 +131,8 @@ food safety standards.
                 <ul class="footer-links">
                     <li><a href="Default.aspx"><i class="bi bi-chevron-right"></i> Home</a></li>
                     <li><a href="About.aspx"><i class="bi bi-chevron-right"></i> About Us</a></li>
-                    <li><a href="Donate.aspx"><i class="bi bi-chevron-right"></i> Products</a></li>
-                    <li><a href="NGOs.aspx"><i class="bi bi-chevron-right"></i> Gallery</a></li>
+                    <li><a href="Products.aspx"><i class="bi bi-chevron-right"></i> Products</a></li>
+                    <li><a href="Gallery.aspx"><i class="bi bi-chevron-right"></i> Gallery</a></li>
                     <li><a href="Contact.aspx"><i class="bi bi-chevron-right"></i> Contact</a></li>
                 </ul>
             </div>

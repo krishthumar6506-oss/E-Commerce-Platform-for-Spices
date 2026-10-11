@@ -156,7 +156,7 @@
             
                 <div class="view-products">
 
-                    <a href="#" class="view-button">
+                    <a href="Products.aspx" class="view-button">
                         View all our Products
                     </a>
 

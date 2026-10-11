@@ -106,22 +106,6 @@
                                 <span>COD ( Cast On Delivery )</span>
                                 <i class="fa-solid fa-circle-check method-check"></i>
                             </label>
-
-                            <label class="payment-method-item" id="lblUPI">
-                                <input type="radio" name="paymentMethod" value="UPI" id="rdoUPI"
-                                    onclick="selectPayment(this)" />
-                                <i class="fa-solid fa-mobile-screen-button"></i>
-                                <span>UPI Payment</span>
-                                <i class="fa-solid fa-circle-check method-check"></i>
-                            </label>
-
-                            <label class="payment-method-item" id="lblCard">
-                                <input type="radio" name="paymentMethod" value="Card" id="rdoCard"
-                                    onclick="selectPayment(this)" />
-                                <i class="fa-solid fa-credit-card"></i>
-                                <span>Credit / Debit Card</span>
-                                <i class="fa-solid fa-circle-check method-check"></i>
-                            </label>
                         </div>
 
                         <!-- Hidden field for payment method -->
