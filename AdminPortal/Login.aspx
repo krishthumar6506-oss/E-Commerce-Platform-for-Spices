@@ -63,18 +63,5 @@
             </section>
         </main>
     </form>
-    <script>
-        (() => {
-            const input = document.getElementById('<%= PasswordTextBox.ClientID %>');
-            const toggle = document.getElementById('toggle-password');
-            toggle.addEventListener('click', () => {
-                const showing = input.type === 'password';
-                input.type = showing ? 'text' : 'password';
-                toggle.setAttribute('aria-label', showing ? 'Hide password' : 'Show password');
-                toggle.title = showing ? 'Hide password' : 'Show password';
-                toggle.classList.toggle('is-visible', showing);
-            });
-        })();
-    </script>
 </body>
 </html>

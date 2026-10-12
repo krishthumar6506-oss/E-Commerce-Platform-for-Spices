@@ -78,6 +78,15 @@
     <Content Include="Products.aspx" />
     <Content Include="ViewOrder.aspx" />
     <Content Include="ViewProduct.aspx" />
+    <Content Include="AdminPortal\Dashboard.aspx" />
+    <Content Include="AdminPortal\Login.aspx" />
+    <Content Include="AdminPortal\Orders.aspx" />
+    <Content Include="AdminPortal\Products.aspx" />
+    <Content Include="AdminPortal\Users.aspx" />
+    <Content Include="AdminPortal\Content\admin.css" />
+    <Content Include="AdminPortal\Content\login.css" />
+    <Content Include="AdminPortal\Images\brand-mark.png" />
+    <Content Include="AdminPortal\Images\product-reference.png" />
     <Content Include="CSS\About.css" />
     <Content Include="CSS\Payment.css" />
     <Content Include="CSS\Products.css" />
@@ -117,6 +126,13 @@
     </Compile>
     <Compile Include="Contact.aspx.designer.cs">
       <DependentUpon>Contact.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminPortal\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminPortal\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
     </Compile>
     <Compile Include="Gallery.aspx.cs">
       <DependentUpon>Gallery.aspx</DependentUpon>
