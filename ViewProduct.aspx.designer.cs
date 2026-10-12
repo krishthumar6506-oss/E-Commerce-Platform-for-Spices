@@ -15,15 +15,6 @@ namespace E_Commerce_Platform_for_Spices
     {
 
         /// <summary>
-        /// lblBreadcrumbName control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl lblBreadcrumbName;
-
-        /// <summary>
         /// lblBadge control.
         /// </summary>
         /// <remarks>
@@ -40,15 +31,6 @@ namespace E_Commerce_Platform_for_Spices
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlImage imgProduct;
-
-        /// <summary>
-        /// lblWeightBox control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblWeightBox;
 
         /// <summary>
         /// lblCategory control.

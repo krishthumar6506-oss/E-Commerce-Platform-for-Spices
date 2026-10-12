@@ -24,18 +24,6 @@
         </div>
     </section>
 
-    <!-- ===== FILTER BAR ===== -->
-    <section class="filter-section">
-        <div class="container">
-            <div class="filter-bar">
-                <button type="button" class="filter-btn active" data-filter="all" id="btnFilterAll">All Products</button>
-                <button type="button" class="filter-btn" data-filter="seeds" id="btnFilterSeeds">Seeds</button>
-                <button type="button" class="filter-btn" data-filter="powder" id="btnFilterPowder">Powder</button>
-                <button type="button" class="filter-btn" data-filter="spices" id="btnFilterSpices">Spices</button>
-                <button type="button" class="filter-btn" data-filter="pulses" id="btnFilterPulses">Pulses</button>
-            </div>
-        </div>
-    </section>
 
     <!-- ===== PRODUCTS GRID ===== -->
     <section class="products-section">

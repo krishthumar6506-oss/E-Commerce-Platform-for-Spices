@@ -67,11 +67,10 @@ namespace E_Commerce_Platform_for_Spices
                 Page.Title = Products[idx, 1] + " - Shree Ram Gruh Udhyog";
 
                 // Set server controls
-                lblBreadcrumbName.InnerText = Products[idx, 1];
                 lblBadge.InnerText = Products[idx, 11];
                 imgProduct.Src = Products[idx, 4];
                 imgProduct.Alt = Products[idx, 1];
-                lblWeightBox.Text = Products[idx, 10];
+
                 lblCategory.InnerText = Products[idx, 3];
                 lblProductName.InnerText = Products[idx, 1];
                 lblTagline.InnerText = Products[idx, 7];

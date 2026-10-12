@@ -22,25 +22,7 @@
         <div class="container">
 
             <!-- Breadcrumb -->
-            <nav class="product-breadcrumb" aria-label="breadcrumb">
-
-                <a href="Home.aspx">
-                    <i class="fa-solid fa-house"></i> Home
-                </a>
-
-                <span class="bc-sep">
-                    <i class="fa-solid fa-chevron-right"></i>
-                </span>
-
-                <a href="Products.aspx">Products</a>
-
-                <span class="bc-sep">
-                    <i class="fa-solid fa-chevron-right"></i>
-                </span>
-
-                <span id="lblBreadcrumbName" runat="server">Product</span>
-
-            </nav>
+           
 
             <div class="product-detail-grid">
 
@@ -60,16 +42,6 @@
                              class="product-detail-img"
                              id="imgProduct"
                              runat="server" />
-
-                    </div>
-
-                    <div class="product-weight-box">
-
-                        <asp:Label
-                            ID="lblWeightBox"
-                            runat="server"
-                            Text="1 kg">
-                        </asp:Label>
 
                     </div>
 
@@ -199,61 +171,6 @@
                 </div>
 
             </div>
-
-            <!-- RELATED PRODUCTS -->
-            <div class="related-section">
-
-                <h2 class="related-title">
-                    You May Also Like
-                </h2>
-
-                <div class="related-grid">
-
-                    <!-- Methi Kuria -->
-                    <a href="ViewProduct.aspx?id=4" class="related-card">
-
-                        <img src="Images/Methi-Kuria.png"
-                             alt="Methi Kuria" />
-
-                        <span>Methi Kuria</span>
-
-                    </a>
-
-                    <!-- Dhana Kuria -->
-                    <a href="ViewProduct.aspx?id=5" class="related-card">
-
-                        <img src="Images/Dhana-Kuria.png"
-                             alt="Dhana Kuria" />
-
-                        <span>Dhana Kuria</span>
-
-                    </a>
-
-                    <!-- Dhana Dal -->
-                    <a href="ViewProduct.aspx?id=6" class="related-card">
-
-                        <img src="Images/Dhana-Dal.png"
-                             alt="Dhana Dal" />
-
-                        <span>Dhana Dal</span>
-
-                    </a>
-
-                    <!-- Fennel Seeds -->
-                    <a href="ViewProduct.aspx?id=7" class="related-card">
-
-                        <img src="Images/Fennel-Seeds.png"
-                             alt="Fennel Seeds" />
-
-                        <span>Fennel Seeds</span>
-
-                    </a>
-
-                </div>
-
-            </div>
-
-        </div>
 
     </section>
 
